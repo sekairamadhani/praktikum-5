@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio - Sekai Putri Ramadhani</title>
+
+    <!-- Panggil CSS Bootstrap Lokal -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .profile-photo {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border: 4px solid #f7f7f7;
+        object-position: center 20%;
+      }
+      .project-img {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- 1. NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#beranda"
+          >Sekai Putri Ramadhani</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyek">Proyek & Dokumentasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. BERANDA & FOTO PROFIL -->
+    <section id="beranda" class="py-5 text-center bg-white shadow-sm">
+      <div class="container">
+        <div class="mb-4">
+          <img
+            src="fotoku.jpg"
+            onerror="this.src = 'https://picsum.photos/300/300?random=profile'"
+            class="rounded-circle profile-photo shadow"
+            alt="Foto Profil Sekai"
+          />
+        </div>
+        <h1 class="fw-bold text-dark">Sekai Putri Ramadhani</h1>
+        <p class="lead text-primary fw-semibold">
+          Mahasiswa Teknologi Informasi | Full-Stack Web Developer & UI/UX
+          Designer
+        </p>
+        <p class="text-muted mx-auto" style="max-width: 600px">
+          "Dimana ada kesulitan pasti ada kemudahan." Berfokus pada pengembangan
+          web, pemecahan masalah sistem, dan perancangan antarmuka digital yang
+          interaktif.
+        </p>
+        <a href="#proyek" class="btn btn-success btn-lg mt-2"
+          >Lihat Proyek Saya</a
+        >
+      </div>
+    </section>
+
+    <!-- 3. TENTANG & KEAHLIAN -->
+    <section id="tentang" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="fw-bold mb-3">Tentang Saya & Keahlian</h2>
+            <p class="text-muted mb-4">
+              Saya adalah mahasiswi aktif Teknologi Informasi yang sedang
+              mendalami dan belajar pemrograman web full-stack, jaringan
+              komputer, rekayasa perangkat lunak, serta perancangan desain
+              antarmuka pengguna yang responsif.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h4 class="card-title fw-bold text-primary mb-3">
+                  Hard Skills
+                </h4>
+                <ul class="list-unstyled text-muted">
+                  <li class="mb-2">
+                    ✔️ Pemrograman Full-Stack / Web Development (HTML, CSS,
+                    JavaScript, Bootstrap)
+                  </li>
+                  <li class="mb-2">✔️ Desain UI/UX (Figma & Wireframing)</li>
+                  <li class="mb-2">✔️ Basis Data & Administrasi Sistem</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h4 class="card-title fw-bold text-success mb-3">
+                  Soft Skills
+                </h4>
+                <ul class="list-unstyled text-muted">
+                  <li class="mb-2">
+                    ✔️ Kerja Tim (Teamwork) & Kolaborasi Proyek
+                  </li>
+                  <li class="mb-2">✔️ Kepemimpinan (Leadership)</li>
+                  <li class="mb-2">
+                    ✔️ Penyelesaian Masalah (Problem Solving) & Analisis Sistem
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BAGIAN PROYEK & DOKUMENTASI -->
+    <section id="proyek" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Proyek & Dokumentasi</h2>
+
+        <div class="row g-4">
+          <!-- PROYEK 1: Tampilan Web Portofolio Mahasiswa -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="proyek1.png"
+                class="card-img-top project-img"
+                alt="Profil Mahasiswa"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">
+                  Web Tampilan Portofolio Mahasiswa (VS Code)
+                </h5>
+                <p class="card-text text-muted">
+                  Pembuatan halaman web portofolio menggunakan struktur HTML dan
+                  CSS Bootstrap yang dikembangkan melalui lingkungan VS Code.
+                </p>
+                <!-- Tombol pemicu modal -->
+                <button
+                  type="button"
+                  class="btn btn-outline-primary mt-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProyek1"
+                >
+                  Lihat Dokumentasi & Aksi
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROYEK 2: Katalog UMKM -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="proyek2.png"
+                class="card-img-top project-img"
+                alt="Katalog UMKM"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">
+                  Desain UI/UX Katalog UMKM (Figma)
+                </h5>
+                <p class="card-text text-muted">
+                  Perancangan antarmuka pengguna interaktif untuk platform
+                  katalog produk UMKM lokal guna mendukung digitalisasi bisnis.
+                </p>
+                <!-- Tombol pemicu modal -->
+                <button
+                  type="button"
+                  class="btn btn-outline-primary mt-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProyek2"
+                >
+                  Lihat Dokumentasi & Aksi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MODAL / POP-UP DOKUMENTASI PROYEK -->
+    <!-- Modal Proyek 1 -->
+    <div class="modal fade" id="modalProyek1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Dokumentasi: Profil Mahasiswa</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="proyek1.png"
+                  class="img-fluid rounded shadow-sm mb-3"
+                  alt="SS Proyek 1"
+                />
+              </div>
+              <div class="col-md-6">
+                <p>
+                  <strong>Deskripsi Pengerjaan:</strong> Proyek ini dikerjakan
+                  di VS Code dengan menyusun kode HTML dasar dan
+                  mengintegrasikannya menggunakan kerangka kerja Bootstrap 5.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Komponen Utama:</strong> Navbar, Container, Row,
+                    Card, dan Button.
+                  </li>
+                  <li>
+                    <strong>Fitur:</strong> Responsif di berbagai perangkat
+                    seluler maupun laptop.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a
+              href="#"
+              class="btn btn-success"
+              onclick="alert('Uji coba tombol berhasil!')"
+              >Uji Coba Tampilan</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Proyek 2 -->
+    <div class="modal fade" id="modalProyek2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">
+              Dokumentasi: Desain UI/UX Katalog UMKM
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="proyek2.png"
+                  class="img-fluid rounded shadow-sm mb-3"
+                  alt="SS Proyek 2"
+                />
+              </div>
+              <div class="col-md-6">
+                <p>
+                  <strong>Deskripsi Pengerjaan:</strong> Perancangan prototipe
+                  visual menggunakan Figma dengan fokus pada kenyamanan navigasi
+                  pengguna (*User Experience*).
+                </p>
+                <ul>
+                  <li><strong>Tools:</strong> Figma</li>
+                  <li>
+                    <strong>Fokus Fitur:</strong> Halaman Beranda Produk,
+                    Kategori UMKM, dan Keranjang Belanja Interaktif.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a
+              href="#"
+              class="btn btn-success"
+              onclick="alert('Membuka link prototipe Figma!')"
+              >Buka Prototype Figma</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. KONTAK -->
+    <section id="kontak" class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-3">Hubungi Saya</h2>
+        <p class="mb-2">
+          Tertarik berkolaborasi atau ingin berdiskusi seputar proyek?
+        </p>
+        <p class="fs-5 text-success fw-semibold">📱 WhatsApp: 089623510503</p>
+        <hr class="border-secondary my-4" />
+        <p class="mb-0 text-muted">
+          &copy; 2026 Sekai Putri Ramadhani. Dibuat dengan Bootstrap 5.
+        </p>
+      </div>
+    </section>
+
+    <!-- Panggil JS Bootstrap Lokal -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
